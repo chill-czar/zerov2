@@ -10,9 +10,16 @@ import { SystemArchitectureSection } from "~/components/landing/system-architect
 import { TransformationSection } from "~/components/landing/transformation-section";
 import { FinalCtaSection } from "~/components/landing/final-cta-section";
 
+import TargetCursor from "~/components/TargetCursor";
+
 export default function Home() {
   return (
     <>
+      <TargetCursor 
+        targetSelector=".cursor-target, a, button, .btn-primary, .btn-secondary" 
+        spinDuration={4} 
+        hoverDuration={0.3} 
+      />
       <HeroSection />
       <FragmentationSection />
       <BreakingPointSection />

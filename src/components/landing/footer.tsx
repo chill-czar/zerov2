@@ -1,11 +1,23 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export function Footer() {
   return (
     <footer className="bg-surface-container-lowest full-width py-24 px-6 md:px-12 border-t border-outline-variant w-full max-w-[1920px] mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-16 mb-24">
         <div className="w-full lg:w-1/3">
-          <Link href="/" className="text-2xl font-black text-primary mb-6 block font-display hover:text-primary-fixed transition-colors">ZERO PMO</Link>
+          <Link href="/" className="mb-6 block group">
+            {/* Logo Placeholder - User will drop Logo-02.png in /public */}
+            <div className="relative w-32 h-24 group-hover:opacity-80 transition-opacity">
+              <Image 
+                src="/Logo-02.png" 
+                alt="ZERO Logo stacked" 
+                fill
+                className="object-contain object-left" 
+              />
+            </div>
+            <span className="sr-only">ZERO PMO</span>
+          </Link>
           <p className="text-secondary-fixed-dim font-body text-lg max-w-sm">
             The definitive architectural standard for executive real estate asset management.
           </p>

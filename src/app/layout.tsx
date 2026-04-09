@@ -45,7 +45,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <div className="relative flex min-h-screen flex-col">
             <TopNavBar />
-            <main className="flex-1 w-full overflow-hidden">
+            <main className="flex-1 w-full">
               {children}
             </main>
             <Footer />
