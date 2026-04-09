@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "motion/react";
 import { motion } from "motion/react";
 import { cn } from "~/lib/utils";
@@ -10,12 +10,7 @@ type StickyScrollContentItem = {
   content?: React.ReactNode;
 };
 
-const BACKGROUND_COLORS = ["#0f172a", "#000000", "#171717"] as const;
-const LINEAR_GRADIENTS = [
-  "linear-gradient(to bottom right, #06b6d4, #10b981)",
-  "linear-gradient(to bottom right, #ec4899, #6366f1)",
-  "linear-gradient(to bottom right, #f97316, #eab308)",
-] as const;
+
 
 export const StickyScroll = ({
   content,
@@ -26,7 +21,7 @@ export const StickyScroll = ({
   scrollItemClassName,
   scrollContentClassName, // Replaced scrollInnerClassName intent
   stickyPositionClassName = "top-10",
-  stickyBackground = false,
+  stickyBackground: _stickyBackground = false,
   containerClassName,
 }: {
   content: StickyScrollContentItem[];

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export function KpiAlignmentSection() {
   const sectionRef = useRef<HTMLElement>(null);

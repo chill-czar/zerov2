@@ -138,7 +138,7 @@ export function ArchitectureFlowSection() {
 
              <AnimatePresence mode="wait">
                {(() => {
-                 const currentStep = steps[activeIndex] || steps[0];
+                 const currentStep = steps[activeIndex] ?? steps[0];
                  if (!currentStep) return null;
                  
                  return (

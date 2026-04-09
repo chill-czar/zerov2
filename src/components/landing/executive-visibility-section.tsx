@@ -118,7 +118,7 @@ export function ExecutiveVisibilitySection() {
 
             {/* Simulated Latency Bars */}
             <div className="w-full h-16 mb-8 flex items-end gap-1.5 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
-               {[...Array(15)].map((_, i) => (
+               {Array.from<undefined>({ length: 15 }).map((_, i) => (
                   <motion.div 
                      key={i}
                      className="flex-1 bg-primary/40 rounded-t-sm"

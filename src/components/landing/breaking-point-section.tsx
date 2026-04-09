@@ -59,7 +59,7 @@ export function BreakingPointSection() {
                 <span className="font-mono text-[10px] sm:text-xs uppercase tracking-[0.3em] text-white/40">Diagnostic Alert :: Threshold Breach</span>
               </div>
               <div className="hidden sm:flex gap-1.5 items-end h-6">
-                {[...Array(6)].map((_, i) => (
+                {Array.from<undefined>({ length: 6 }).map((_, i) => (
                   <motion.div 
                     key={i}
                     animate={{ height: ["4px", "24px", "8px", "16px", "4px"] }}
@@ -77,7 +77,7 @@ export function BreakingPointSection() {
                 </h2>
                 <div className="h-px w-16 bg-linear-to-r from-amber-500/40 to-transparent mb-8"></div>
                 <p className="text-white/50 text-lg md:text-xl leading-relaxed font-light">
-                  When the speed of physical portfolio changes outpaces your organization's digital reporting, you are no longer managing operations.<br/><br/>
+                  When the speed of physical portfolio changes outpaces your organization&apos;s digital reporting, you are no longer managing operations.<br/><br/>
                   <span className="font-medium text-white/90">You are reacting to a history book.</span>
                 </p>
               </div>

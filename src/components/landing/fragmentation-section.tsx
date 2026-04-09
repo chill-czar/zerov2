@@ -41,9 +41,9 @@ export function FragmentationSection() {
 
           <div className="h-32 w-full bg-[#050505] border border-white/5 rounded-xl mb-10 p-5 flex flex-col gap-3 relative overflow-hidden z-10">
             <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/5 to-transparent -translate-x-full group-hover:animate-[shimmer_2s_infinite]"></div>
-            {[...Array(3)].map((_, r) => (
+            {Array.from<undefined>({ length: 3 }).map((_, r) => (
               <div key={r} className="flex gap-3 w-full">
-                {[...Array(5)].map((_, c) => {
+                {Array.from<undefined>({ length: 5 }).map((_, c) => {
                   const isError = (r === 1 && c === 3) || (r === 2 && c === 1);
                   return (
                     <div 
