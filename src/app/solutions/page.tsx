@@ -14,12 +14,14 @@ export default function SolutionsPage() {
     <>
       <SolutionsHeroSection />
       
-      <RoleSection 
+      <RoleSection
         label="The Vision"
         role="Developers"
         subtext="See how your portfolio performs against your business plan."
         features={[
+          "Track feasibility to delivery",
           "Track project rollout",
+          "Track progress across design, procurement, and construction",
           "Monitor sales and revenue",
           "Understand capital deployment",
           "Align execution with strategy"
@@ -29,36 +31,39 @@ export default function SolutionsPage() {
         linkText="Explore Developer System"
         alignRight={false}
       />
-      
-      <RoleSection 
-        label="The Execution"
-        role="PMO Leaders"
-        subtext="Operate with structure, not spreadsheets."
+
+      <RoleSection
+        label="Design Development"
+        role="Consultants"
+        subtext="Operate inside developer platform, not outside."
         features={[
           "Manage all projects in one system",
-          "Track progress across design, procurement, and construction",
-          "Standardize workflows and approvals",
-          "Maintain real-time reporting"
+          "Update design program",
+          "PS / PC Items Progress",
+          "Permits & NOCs",
+          "Risk Management"
         ]}
-        closing="Run a structured PMO — not a reactive one."
-        linkHref="/solutions/pmo"
-        linkText="Explore PMO System"
+        closing="Structured design development — not in isolation."
+        linkHref="/solutions/consultants"
+        linkText="Explore Design Module"
         alignRight={true}
       />
-      
-      <RoleSection 
-        label="The Outcome"
-        role="Asset Managers"
-        subtext="Understand how your portfolio is performing at any moment."
+
+      <RoleSection
+        label="Construction Reporting"
+        role="Contractors"
+        subtext="Understand how your project is performing at any moment."
         features={[
-          "Monitor revenue and financial performance",
-          "Track asset-level KPIs",
-          "Evaluate portfolio health",
-          "Access real-time data"
+          "Live construction progress",
+          "SPI & CPI Tracking",
+          "Major milestone tracking",
+          "HSE & QA/QC matrix",
+          "Risk Management",
+          "Manage portfolios"
         ]}
         closing="Make decisions based on clarity — not assumptions."
-        linkHref="/solutions/asset-managers"
-        linkText="Explore Asset Manager System"
+        linkHref="/solutions/contractors"
+        linkText="Explore Construction Module"
         alignRight={false}
       />
       

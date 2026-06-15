@@ -28,6 +28,10 @@ export function TopNavBar() {
         </Link>
         
         <div className="hidden lg:flex gap-8 items-center">
+          <Link href="/" className="relative text-on-surface-variant hover:text-white transition-colors font-label text-sm py-1 group">
+            Home
+            <span className="absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+          </Link>
           <Link href="/platform" className="relative text-on-surface-variant hover:text-white transition-colors font-label text-sm py-1 group">
             Platform
             <span className="absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-out" />
@@ -83,6 +87,10 @@ export function TopNavBar() {
             transition={{ duration: 0.2 }}
             className="lg:hidden absolute top-full left-0 right-0 bg-surface/95 backdrop-blur-xl border-t border-outline-variant/30 flex flex-col gap-6 px-6 py-8 z-50 shadow-[0_20px_60px_rgba(0,0,0,0.6)]"
           >
+            <Link href="/" className="relative w-fit text-on-surface-variant hover:text-white font-label text-sm py-1 group" onClick={() => setIsOpen(false)}>
+              Home
+              <span className="absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+            </Link>
             <Link href="/platform" className="relative w-fit text-on-surface-variant hover:text-white font-label text-sm py-1 group" onClick={() => setIsOpen(false)}>
               Platform
               <span className="absolute bottom-0 left-0 w-full h-px bg-primary scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-out" />

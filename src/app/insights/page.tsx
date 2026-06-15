@@ -16,7 +16,7 @@ export default function InsightsPage() {
     <>
       <InsightsHeroSection />
       <FeaturedInsightSection />
-      <CoreTopicsSection />
+      {/* <CoreTopicsSection /> */}
       <InsightListSection />
       <ThinkingFrameworkSection />
       <InsightsTransitionSection />

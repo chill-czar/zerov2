@@ -18,8 +18,6 @@ export function FinalCtaSection({
   subtext = "",
   ctaText = "Schedule Authority Briefing",
   ctaHref = "/contact",
-  secondaryCtaText = "Explore Architecture",
-  secondaryCtaHref = "/platform",
   hideSecondary = false
 }: FinalCtaSectionProps) {
   return (
@@ -83,14 +81,6 @@ export function FinalCtaSection({
                   {ctaText}
                </button>
             </Link>
-
-            {!hideSecondary && (
-              <Link href={secondaryCtaHref} className="w-full sm:w-auto group/sec">
-                <button className="w-full bg-transparent border border-white/20 text-white font-mono text-sm md:text-base uppercase tracking-[0.2em] px-10 py-5 transition-all duration-500 hover:border-white/60 hover:bg-white/5">
-                  {secondaryCtaText}
-                </button>
-              </Link>
-            )}
           </div>
         </motion.div>
 

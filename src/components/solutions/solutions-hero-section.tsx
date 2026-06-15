@@ -17,7 +17,7 @@ export function SolutionsHeroSection() {
           Built for Real Estate <br className="hidden md:block"/> Decision-Makers
         </h1>
         <p className="text-xl md:text-2xl text-secondary-fixed-dim font-light tracking-tight max-w-3xl mx-auto leading-relaxed mb-6">
-          ZERO adapts to how different roles operate — while keeping the entire portfolio aligned.
+          ZERO adapts to Developer, Consultant and Contractor works — while keeping the entire portfolio aligned.
         </p>
         <p className="text-lg md:text-xl text-primary font-body max-w-2xl mx-auto">
           One system. <span className="text-white font-medium">Three perspectives.</span>

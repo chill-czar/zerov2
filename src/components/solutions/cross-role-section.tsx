@@ -27,9 +27,9 @@ export function CrossRoleSection() {
         >
           <p><span className="text-white font-body px-2">Developers</span> focus on performance</p>
           <MoreVertical size={20} className="text-primary/30 hidden md:block" />
-          <p><span className="text-white font-body px-2">PMO teams</span> focus on execution</p>
+          <p><span className="text-white font-body px-2">Consultant</span> focus on design and execution</p>
           <MoreVertical size={20} className="text-primary/30 hidden md:block" />
-          <p><span className="text-white font-body px-2">Asset managers</span> focus on outcomes</p>
+          <p><span className="text-white font-body px-2">Contractor</span> focus on delivery</p>
         </motion.div>
         
         <motion.div
