@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 
 export function IntroduceZeroSection() {
@@ -15,19 +16,10 @@ export function IntroduceZeroSection() {
 
   return (
     <>
-      <section className="py-32 md:py-48 px-6 md:px-12 overflow-hidden relative bg-[#050505] flex items-center min-h-[80vh]">
+      <section className="py-20 md:py-48 px-6 md:px-12 overflow-hidden relative bg-[#050505] flex items-center min-h-[80vh]">
         
         {/* The Architectural Blueprint Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[100px_100px] mask-[radial-gradient(ellipse_70%_70%_at_50%_50%,black_40%,transparent_100%)] pointer-events-none"></div>
-
-        {/* Central Vertical Plumb Line */}
-        <motion.div 
-          initial={{ height: 0 }}
-          whileInView={{ height: "100%" }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.5, ease: "circOut" }}
-          className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-px bg-linear-to-b from-transparent via-primary/50 to-transparent pointer-events-none"
-        />
 
         <div className="max-w-7xl mx-auto relative z-10 w-full flex flex-col items-center text-center">
           
@@ -36,13 +28,20 @@ export function IntroduceZeroSection() {
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="mb-8 relative"
+            className="mb-6 relative"
           >
-            {/* Massive Behind-Text Glow */}
+            {/* Massive Behind-Logo Glow */}
             <div className="absolute inset-0 bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-            <span className="relative text-[7rem] md:text-[14rem] lg:text-[18rem] font-display font-bold leading-none tracking-tighter text-transparent bg-clip-text bg-linear-to-b from-white via-white/80 to-white/5 select-none">
-              ZERO
-            </span>
+
+            {/* Logo Image */}
+            <Image
+              src="/Logo-02.png"
+              alt="ZERO"
+              width={700}
+              height={467}
+              className="relative w-[350px] md:w-[600px] lg:w-[850px] h-auto object-contain select-none"
+              priority
+            />
           </motion.div>
 
           <motion.div 
@@ -73,20 +72,20 @@ export function IntroduceZeroSection() {
              whileInView={{ opacity: 1 }}
              viewport={{ once: true }}
              transition={{ duration: 1, delay: 0.6 }}
-             className="mt-14 text-on-surface-variant text-lg md:text-2xl max-w-2xl mx-auto font-light leading-relaxed"
+             className="mt-8 text-on-surface-variant text-lg md:text-2xl max-w-2xl mx-auto font-light leading-relaxed"
           >
             A unified operating system built for the complexity of enterprise real estate. No spreadsheets. No silos. Just architectural truth.
           </motion.p>
         </div>
       </section>
 
-      <section className="py-24 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
+      <section className="py-16 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
         
         {/* Structural Blueprint Grids */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[80px_80px] pointer-events-none mask-[radial-gradient(ellipse_at_center,black_20%,transparent_70%)] opacity-30 z-0"></div>
         
         <motion.div 
-          className="max-w-7xl mx-auto flex flex-col gap-12 lg:gap-24 relative z-10"
+          className="max-w-7xl mx-auto flex flex-col gap-8 lg:gap-24 relative z-10"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

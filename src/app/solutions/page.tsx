@@ -31,7 +31,7 @@ export default function SolutionsPage() {
         linkText="Explore Developer System"
         alignRight={false}
       />
-
+        
       <RoleSection
         label="Design Development"
         role="Consultants"

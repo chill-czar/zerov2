@@ -139,7 +139,7 @@ export function FragmentationSection() {
   ];
 
   return (
-    <section className="bg-[#050505] py-24 md:py-40 px-6 md:px-12 relative border-t border-white/5">
+    <section className="bg-[#050505] py-16 md:py-40 px-6 md:px-12 relative border-t border-white/5">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-size-[40px_40px] opacity-30"></div>
       </div>
@@ -150,10 +150,10 @@ export function FragmentationSection() {
           stickyOnLeft={true}
           stickyContentOverride={LeftStickyContent}
           hideTitles={true}
-          containerClassName="gap-16 lg:gap-24"
+          containerClassName="gap-10 lg:gap-24"
           contentClassName="lg:w-5/12 lg:top-[30vh] z-10 self-start"
           scrollContentClassName="lg:w-7/12 w-full relative z-10"
-          scrollItemClassName="mb-12 md:mb-16"
+          scrollItemClassName="mb-8 md:mb-16"
         />
       </div>
 

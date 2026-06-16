@@ -13,16 +13,15 @@ export function TopNavBar() {
     <nav className="bg-surface/90 backdrop-blur-xl w-full px-6 md:px-12 py-4 md:py-5 max-w-[1920px] mx-auto sticky top-0 z-50 border-none shadow-ambient">
       <div className="flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group">
-          {/* Logo Placeholder - User will drop Logo-01.png in /public */}
-          <div className="relative w-24 h-12 md:w-36 md:h-14 group-hover:opacity-80 transition-opacity">
-            <Image 
-              src="/Logo-01.png" 
-              alt="ZERO Logo" 
-              fill
-              className="object-contain object-left scale-125 md:scale-150 origin-left" 
-              priority
-            />
-          </div>
+          {/* Logo */}
+          <Image
+            src="/Logo-01.png"
+            alt="ZERO Logo"
+            width={140}
+            height={56}
+            className="w-8 h-auto md:w-10 md:h-auto group-hover:opacity-80 transition-opacity"
+            priority
+          />
           {/* Fallback text just in case image is missing while testing */}
           <span className="sr-only">ZERO PMO</span>
         </Link>

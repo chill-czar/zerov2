@@ -9,6 +9,7 @@ import {
   User, Activity, AlertTriangle, ArrowUpRight
 } from 'lucide-react';
 import PixelBlast from '~/components/PixelBlast';
+import { useIsMobile } from '~/hooks/useIsMobile';
 
 function MockupLaptop() {
   const [revenue, setRevenue] = useState(840.1);
@@ -23,7 +24,7 @@ function MockupLaptop() {
 
   return (
     <motion.div 
-      className="w-full max-w-[1920px] mx-auto mt-20 md:mt-32 relative perspective-[4000px] z-20 px-2 lg:px-12 2xl:px-24 mb-32"
+      className="w-full max-w-[1920px] mx-auto mt-20 md:mt-32 mb-16 md:mb-32 relative perspective-[4000px] z-20 px-2 lg:px-12 2xl:px-24"
       initial={{ opacity: 0, scale: 0.95, y: 100 }}
       animate={{ opacity: 1, scale: 1, y: 0 }}
       transition={{ duration: 1.5, delay: 0.5, type: "spring", stiffness: 40 }}
@@ -329,6 +330,7 @@ function MockupLaptop() {
 }
 
 export function HeroSection() {
+  const isMobile = useIsMobile();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -348,9 +350,9 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0 opacity-40">
         <PixelBlast
           variant="diamond"
-          pixelSize={5}
+          pixelSize={isMobile ? 3 : 5}
           color="#e2c384"
-          patternScale={6}
+          patternScale={isMobile ? 4 : 6}
           patternDensity={1}
           pixelSizeJitter={0}
           enableRipples={true}

@@ -19,14 +19,14 @@ export function TransformationSection() {
   ];
 
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
+    <section className="py-16 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
       {/* Cinematic Deep Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none opacity-30 mask-[radial-gradient(ellipse_at_center,black_40%,transparent_80%)]"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col items-center justify-center text-center mb-20 md:mb-32">
+        <div className="flex flex-col items-center justify-center text-center mb-12 md:mb-32">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ export function TransformationSection() {
           
           {/* Legacy Card */}
           <motion.div 
-            className={`rounded-3xl border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl p-8 md:p-14 transition-all duration-700 relative overflow-hidden flex flex-col ${
+            className={`rounded-3xl border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl p-6 md:p-14 transition-all duration-700 relative overflow-hidden flex flex-col ${
               hoveredCard === 'zero' 
                 ? 'opacity-30 scale-[0.98] blur-xs' 
                 : hoveredCard === 'legacy' 
@@ -66,7 +66,7 @@ export function TransformationSection() {
             {/* Legacy Internal Glow */}
             <div className={`absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(239,68,68,0.05)_0%,transparent_60%)] transition-opacity duration-1000 pointer-events-none ${hoveredCard === 'legacy' ? 'opacity-100' : 'opacity-0'}`}></div>
 
-            <div className="relative z-10 flex items-center gap-4 mb-16 border-b border-white/5 pb-8">
+            <div className="relative z-10 flex items-center gap-4 mb-10 border-b border-white/5 pb-8">
               <div className="w-12 h-12 rounded-full bg-red-500/5 border border-red-500/20 flex items-center justify-center shrink-0">
                 <X className="text-red-400/80" size={20} />
               </div>
@@ -76,7 +76,7 @@ export function TransformationSection() {
               </div>
             </div>
 
-            <ul className="space-y-12 relative z-10">
+            <ul className="space-y-8 relative z-10">
               {/* Vertical connecting line */}
               <div className={`absolute left-[11px] top-6 bottom-12 w-px transition-colors duration-700 ${hoveredCard === 'legacy' ? 'bg-linear-to-b from-red-500/30 via-red-500/10 to-transparent' : 'bg-white/5'}`}></div>
               
@@ -100,7 +100,7 @@ export function TransformationSection() {
 
           {/* ZERO Card */}
           <motion.div 
-            className={`rounded-3xl border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl p-8 md:p-14 transition-all duration-700 relative overflow-hidden flex flex-col ${
+            className={`rounded-3xl border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl p-6 md:p-14 transition-all duration-700 relative overflow-hidden flex flex-col ${
               hoveredCard === 'legacy' 
                 ? 'opacity-30 scale-[0.98] blur-xs' 
                 : hoveredCard === 'zero' 
@@ -117,7 +117,7 @@ export function TransformationSection() {
             {/* ZERO Internal Glow */}
             <div className={`absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(226,195,132,0.12)_0%,transparent_70%)] transition-opacity duration-1000 pointer-events-none ${hoveredCard === 'zero' ? 'opacity-100' : 'opacity-0'}`}></div>
 
-            <div className="relative z-10 flex items-center gap-4 mb-16 border-b border-white/5 pb-8">
+            <div className="relative z-10 flex items-center gap-4 mb-10 border-b border-white/5 pb-8">
               <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center shrink-0 shadow-[0_0_20px_rgba(226,195,132,0.2)]">
                 <Check className="text-primary" size={20} strokeWidth={3} />
               </div>
@@ -127,7 +127,7 @@ export function TransformationSection() {
               </div>
             </div>
 
-            <ul className="space-y-12 relative z-10">
+            <ul className="space-y-8 relative z-10">
               {/* Vertical connecting line */}
               <div className={`absolute left-[11px] top-6 bottom-12 w-px transition-colors duration-700 ${hoveredCard === 'zero' ? 'bg-linear-to-b from-primary/50 via-primary/20 to-transparent' : 'bg-white/5'}`}></div>
               

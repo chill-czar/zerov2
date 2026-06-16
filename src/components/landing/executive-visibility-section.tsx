@@ -14,7 +14,7 @@ export function ExecutiveVisibilitySection() {
   };
 
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
+    <section className="py-16 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
       
       {/* Deep Background Noise / Radar Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[100px_100px] pointer-events-none opacity-20 mask-[radial-gradient(ellipse_at_top,black_20%,transparent_70%)]"></div>
@@ -22,7 +22,7 @@ export function ExecutiveVisibilitySection() {
       <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-20 md:mb-24">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10 mb-12 md:mb-24">
           <motion.div 
             className="space-y-6 max-w-3xl"
             initial={{ opacity: 0, x: -30 }}

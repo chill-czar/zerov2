@@ -16,7 +16,7 @@ export function BreakingPointSection() {
   const xRight = useTransform(scrollYProgress, [0, 1], ["-15%", "0%"]);
 
   return (
-    <section ref={containerRef} className="bg-[#050505] relative py-32 md:py-48 overflow-hidden flex items-center justify-center min-h-[90vh] border-t border-white/5">
+    <section ref={containerRef} className="bg-[#050505] relative py-20 md:py-48 overflow-hidden flex items-center justify-center min-h-[90vh] border-t border-white/5">
       
       {/* Precision Structural Grid */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.015)_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none z-10 mask-[radial-gradient(ellipse_at_center,black_40%,transparent_90%)]"></div>
@@ -47,7 +47,7 @@ export function BreakingPointSection() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-            className="border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-3xl p-8 md:p-16 rounded-3xl shadow-[0_0_80px_rgba(0,0,0,0.5)] relative overflow-hidden"
+            className="border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-3xl p-6 md:p-16 rounded-3xl shadow-[0_0_80px_rgba(0,0,0,0.5)] relative overflow-hidden"
           >
             {/* Top Bar of Console */}
             <div className="flex items-center justify-between border-b border-white/5 pb-6 mb-12">
@@ -70,7 +70,7 @@ export function BreakingPointSection() {
               </div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-16 lg:gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
               <div>
                 <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-display font-medium leading-[1.1] text-white tracking-tight mb-8">
                   The exact moment control is <span className="text-amber-500/90 italic font-light">lost.</span>

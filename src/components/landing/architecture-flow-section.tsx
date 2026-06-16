@@ -44,12 +44,12 @@ export function ArchitectureFlowSection() {
   return (
     <>
       <style>{`.hide-scrollbars::-webkit-scrollbar { display: none; } .hide-scrollbars { -ms-overflow-style: none; scrollbar-width: none; }`}</style>
-      <section ref={sectionRef} className="py-24 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden">
+      <section ref={sectionRef} className="py-16 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden">
         
         {/* Subtle Background Structural Grid */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[60px_60px] pointer-events-none mask-[linear-gradient(to_bottom,black,transparent_70%)]"></div>
 
-        <div className="max-w-7xl mx-auto relative z-10 flex flex-col justify-center items-center text-center gap-6 mb-20 md:mb-32">
+        <div className="max-w-7xl mx-auto relative z-10 flex flex-col justify-center items-center text-center gap-4 mb-12 md:mb-32">
           
           <motion.div 
             className="w-full flex flex-col items-center"

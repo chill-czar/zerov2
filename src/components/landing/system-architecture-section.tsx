@@ -32,12 +32,12 @@ export function SystemArchitectureSection() {
   ];
 
   return (
-    <section className="py-24 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
+    <section className="py-16 md:py-40 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5">
       
       {/* Structural Background Blueprint */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-size-[60px_60px] pointer-events-none opacity-20 mask-[radial-gradient(ellipse_at_bottom_right,black_20%,transparent_70%)]"></div>
       
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 relative z-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-24 relative z-10">
         
         {/* Left Column: Mission Text */}
         <div className="lg:w-5/12 flex flex-col justify-center">
@@ -94,7 +94,7 @@ export function SystemArchitectureSection() {
                  className="flex flex-col sm:flex-row gap-6 md:gap-8 relative z-10 group"
                >
                   {/* Node */}
-                  <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl border border-white/10 bg-[#0A0A0A]/80 backdrop-blur-xl flex flex-col items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.8)] group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-500 relative overflow-hidden">
+                  <div className=" hidden md:flex w-20 h-20 md:w-24 md:h-24 shrink-0 rounded-2xl border border-white/10 bg-[#0A0A0A]/80 backdrop-blur-xl flex flex-col items-center justify-center shadow-[0_0_20px_rgba(0,0,0,0.8)] group-hover:border-primary/50 group-hover:bg-primary/5 transition-all duration-500 relative overflow-hidden">
                      <span className="font-mono text-2xl md:text-3xl text-white/40 group-hover:text-primary transition-colors duration-300 z-10">{layer.num}</span>
                      
                      {/* Subtle internal glow on hover */}

@@ -22,7 +22,7 @@ export function FinalCtaSection({
 }: FinalCtaSectionProps) {
   return (
     <>
-      <section className="py-32 md:py-48 px-6 md:px-12 bg-[#020202] relative overflow-hidden flex items-center justify-center text-center border-t border-white/5">
+      <section className="py-20 md:py-48 px-6 md:px-12 bg-[#020202] relative overflow-hidden flex items-center justify-center text-center border-t border-white/5">
         {/* Subtle background pulse for cinematic depth */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(226,195,132,0.03)_0%,transparent_60%)] pointer-events-none"></div>
 
@@ -33,7 +33,7 @@ export function FinalCtaSection({
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 1.2, ease: "easeOut" }}
         >
-          <h2 className="text-[3.5rem] leading-[1.05] md:text-[7rem] font-display font-medium text-white tracking-tighter mb-8">
+          <h2 className="text-[3.5rem] leading-[1.05] md:text-[7rem] font-display font-medium text-white tracking-tighter mb-6">
             This Is Not <span className="text-white/30 italic font-light pr-4">Software.</span>
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
@@ -46,7 +46,7 @@ export function FinalCtaSection({
         </motion.div>
       </section>
       
-      <section className="py-32 md:py-48 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5 border-b">
+      <section className="py-20 md:py-48 px-6 md:px-12 bg-[#050505] relative overflow-hidden border-t border-white/5 border-b">
         {/* Architectural Background Grid */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-size-[40px_40px] pointer-events-none opacity-50 mask-[radial-gradient(ellipse_at_center,black_50%,transparent_90%)]"></div>
         
@@ -54,7 +54,7 @@ export function FinalCtaSection({
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(ellipse_at_top,rgba(226,195,132,0.15)_0%,transparent_70%)] pointer-events-none"></div>
 
         <motion.div 
-          className="max-w-4xl mx-auto text-center relative z-10 space-y-10 md:space-y-16"
+          className="max-w-4xl mx-auto text-center relative z-10 space-y-8 md:space-y-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

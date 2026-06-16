@@ -16,7 +16,7 @@
   --color-primary: #e2c384;
   --color-on-primary: #3f2e00;
   --color-primary-container: #b89b58; 
-  --color-secondary-fixed-dim: #a1a1aa; 
+  --color-secondary-fixed-dim: #c5c5cd; 
   --color-outline-variant: rgba(255, 255, 255, 0.15); 
 
   /* Typography */
@@ -300,7 +300,7 @@
   --secondary: #2a2a2a;
   --secondary-foreground: #f5f5f5;
   --muted: #222222;
-  --muted-foreground: #a1a1aa;
+  --muted-foreground: #c5c5cd;
   --accent: #2a2a2a;
   --accent-foreground: #f5f5f5;
   --destructive: #ff5555;

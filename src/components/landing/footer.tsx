@@ -8,12 +8,12 @@ export function Footer() {
         <div className="w-full lg:w-1/3">
           <Link href="/" className="mb-6 block group">
             {/* Logo Placeholder - User will drop Logo-02.png in /public */}
-            <div className="relative w-32 h-24 group-hover:opacity-80 transition-opacity">
-              <Image 
-                src="/Logo-02.png" 
-                alt="ZERO Logo stacked" 
+            <div className="relative w-36 h-28 md:w-48 md:h-36 group-hover:opacity-80 transition-opacity">
+              <Image
+                src="/Logo-02.png"
+                alt="ZERO Logo stacked"
                 fill
-                className="object-contain object-left" 
+                className="object-contain object-left"
               />
             </div>
             <span className="sr-only">ZERO PMO</span>
