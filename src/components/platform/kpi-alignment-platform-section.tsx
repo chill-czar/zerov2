@@ -7,9 +7,9 @@ export function KpiAlignmentPlatformSection() {
   const [activeNode, setActiveNode] = useState<number | null>(null);
 
   const nodes = [
-    { id: 0, title: 'Department KPIs', desc: 'Granular operational metrics from procurement, HR, and design.' },
+    { id: 0, title: 'Business Performance', desc: 'Executive-level yield, IRR, and portfolio-wide financial strategy.' },
     { id: 1, title: 'Project KPIs', desc: 'Aggregated asset performance against baseline budgets and schedules.' },
-    { id: 2, title: 'Business Performance', desc: 'Executive-level yield, IRR, and portfolio-wide financial strategy.' }
+    { id: 2, title: 'Department KPIs', desc: 'Granular operational metrics from procurement, HR, and design.' },
   ];
 
   return (

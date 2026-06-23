@@ -9,8 +9,8 @@ export function KpiAlignmentSection() {
   // Rendered from TOP to BOTTOM internally, so Data flows UP (Bottom to Top)
   const steps = [
     { level: '03', label: 'THE APEX', title: 'Business KPI', desc: 'Board-level executive reporting directly aligned to the overriding Business Plan.' },
-    { level: '02', label: 'THE CORE', title: 'Project KPI', desc: 'Consolidated structural health metrics for specific assets or ongoing developments.' },
-    { level: '01', label: 'THE FOUNDATION', title: 'Dept KPI', desc: 'Granular, high-fidelity performance data from individual functional teams.' }
+    { level: '02', label: 'THE FOUNDATION', title: 'Department KPI', desc: 'Granular, high-fidelity performance data from individual functional teams.' },
+    { level: '01', label: 'THE CORE', title: 'Project KPI', desc: 'Consolidated structural health metrics for specific assets or ongoing developments.' }
   ];
 
   return (

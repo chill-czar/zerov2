@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence, useInView } from 'framer-motion';
-import { Layers, Box, Activity, TrendingUp, Wallet } from 'lucide-react';
+import { FileCheck, Rocket, Layers, TrendingUp, Box, Activity, Wallet } from 'lucide-react';
 
 export function ArchitectureFlowSection() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,11 +13,13 @@ export function ArchitectureFlowSection() {
   const isInView = useInView(sectionRef, { margin: "-100px", once: false });
   
   const steps = [
-    { id: '01', title: 'Design', label: 'PHASE I', desc: 'Parametric blueprints & structural engineering validation locked into immutable ledgers.', icon: Layers },
-    { id: '02', title: 'Procurement', label: 'PHASE II', desc: 'Global supply chain sync. Automated variance detection across vendor networks.', icon: Box },
-    { id: '03', title: 'Construction', label: 'PHASE III', desc: 'Physical assembly tracked via real-time onsite telemetry and drone lidar sweeps.', icon: Activity },
-    { id: '04', title: 'Sales', label: 'PHASE IV', desc: 'Market realization executing against dynamic, algorithmically optimized pricing models.', icon: TrendingUp },
-    { id: '05', title: 'Revenue', label: 'FINAL', desc: 'Secure financial settlement and continuous portfolio value optimization.', icon: Wallet },
+    { id: '01', title: 'Project Feasibility', label: 'PHASE I', desc: 'Choosing right project over wrong, through transparent process.', icon: FileCheck },
+    { id: '02', title: 'Project Initiation', label: 'PHASE II', desc: 'Scope finalization, stakeholders identification, resource assignment and project kick off.', icon: Rocket },
+    { id: '03', title: 'Design', label: 'PHASE III', desc: 'Design to budget, instead of budget to design.', icon: Layers },
+    { id: '04', title: 'Sales', label: 'PHASE IV', desc: 'Ensuring project launch meets internal targets and corresponds to market appetite.', icon: TrendingUp },
+    { id: '05', title: 'Procurement', label: 'PHASE V', desc: 'Establish supply chain in time and within budget.', icon: Box },
+    { id: '06', title: 'Construction', label: 'PHASE VI', desc: 'Physical works tracked via real-time onsite telemetry.', icon: Activity },
+    { id: '07', title: 'Revenue Realization', label: 'FINAL', desc: 'Secure revenue realization through timely delivery of assets.', icon: Wallet },
   ];
 
   // Automatic timeline progression
@@ -60,14 +62,14 @@ export function ArchitectureFlowSection() {
           >
             <div className="flex items-center gap-3 mb-6">
                <div className="w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(226,195,132,1)]"></div>
-               <span className="text-primary font-mono text-xs md:text-sm tracking-[0.2em] uppercase">Pipeline Topography</span>
+               <span className="text-primary font-mono text-xs md:text-sm tracking-[0.2em] uppercase">Process Pipeline</span>
                <div className="w-1.5 h-1.5 bg-primary rounded-full shadow-[0_0_10px_rgba(226,195,132,1)]"></div>
             </div>
             <h2 className="text-[2.5rem] md:text-5xl lg:text-5xl text-white font-display font-medium tracking-tight mb-6 md:mb-8 leading-[1.1] max-w-4xl">
-              Horizontal Narrative <span className="text-white/40 italic font-light">Architecture.</span>
+              Horizontal <span className="text-white/40 italic font-light">Architecture.</span>
             </h2>
             <p className="text-lg md:text-xl text-on-surface-variant max-w-3xl font-light leading-relaxed">
-              ZERO maps the entire enterprise horizontal. We connect ground-level technical execution directly with top-floor financial strategy, ensuring no fidelity is lost in translation.
+              ZERO maps the entire enterprise horizontal. It connect ground-level technical execution directly with top-floor financial strategy
             </p>
           </motion.div>
         </div>
