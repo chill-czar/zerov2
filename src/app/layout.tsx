@@ -10,7 +10,7 @@ import { Footer } from "~/components/landing/footer";
 export const metadata: Metadata = {
   title: "ZERO PMO | Architectural Authority",
   description: "The definitive architectural standard for executive real estate asset management.",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/Logo-01.png" }],
   other: {
     // Material Symbols icon font — not supported by next/font, loaded via link
     "font-preconnect-gstatic": "",
